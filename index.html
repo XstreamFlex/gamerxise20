@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerXise - Transform Your Gaming into a Workout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003791',
+                        secondary: '#107c10',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 55, 145, 0.7), rgba(0, 55, 145, 0.7)), url('https://images.unsplash.com/photo-1542270921-177995f00e9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1ODg4NTB8MHwxfHNlYXJjaHwxfHxjb25zb2xlJTIwZ2FtaW5nfGVufDB8fHx8MTcyMjk4ODIxOXww&ixlib=rb-4.0.3&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary">GamerXise</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-800 hover:text-primary">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-primary">About</a>
+                    <a href="#services" class="text-gray-800 hover:text-primary">Services</a>
+                    <a href="#pricing" class="text-gray-800 hover:text-primary">Pricing</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-primary">Blog</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transform Your Gaming into a Workout</h1>
+            <p class="text-xl md:text-2xl mb-8">Enhance your health and gaming skills with GamerXise</p>
+            <a href="#pricing" class="bg-secondary hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Our Story</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    GamerXise was created out of necessity by a founder with ADHD and a TBI survivor who was suffering from chronic migraines. Struggling to maintain healthy exercise habits, he turned to what he knew worked: the immersive power of video games. By merging gaming and exercise, he found a way to improve his health and happiness. GamerXise is now a solution designed to benefit the world, offering full-body workouts that can be done while playing your favorite games, improving both body and mind.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-primary mb-4">GamerXise Monthly</h3>
+                    <p class="text-gray-700 mb-4">Get new workouts every month with guided sessions, educational resources, and bonuses to enhance your results. No additional equipment required. $27/month.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-primary mb-4">GamerXise Client</h3>
+                    <p class="text-gray-700 mb-4">Tailored programs with a personal trainer to assess, guide, and monitor your progress. Achieve specific goals with personalized attention. $100/month or $75 per session.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-primary mb-4">GamerXise Programming</h3>
+                    <p class="text-gray-700 mb-4">Semi-personalized programs designed by a personal trainer with monthly updates. Includes an initial assessment and unlimited program adjustments. $100 initial fee, $60/month thereafter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 italic mb-4">"I've lost weight and improved my gaming skills without even realizing it! GamerXise is a game-changer."</p>
+                    <p class="font-bold text-primary">Alex R.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 italic mb-4">"GamerXise has helped me stay active and healthy while enjoying my favorite games. It's a perfect fit for my lifestyle."</p>
+                    <p class="font-bold text-primary">Sam H.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 italic mb-4">"The personalized program has been amazing. I've seen real improvements in my health and game performance."</p>
+                    <p class="font-bold text-primary">Jordan K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Pricing Plans</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-4">Basic</h3>
+                    <p class="text-3xl font-bold mb-6">$27/month</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Monthly guided workouts
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Educational resources
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Bonuses to improve results
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            No additional equipment required
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 px-4 rounded text-center transition duration-300">Choose Plan</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-primary transform scale-105">
+                    <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-bl rounded-tr">POPULAR</div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Premium</h3>
+                    <p class="text-3xl font-bold mb-6">$100/month</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Personal trainer assessment
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Tailored workout programs
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Monthly updates
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Unlimited program adjustments
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 px-4 rounded text-center transition duration-300">Choose Plan</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-4">Pro</h3>
+                    <p class="text-3xl font-bold mb-6">$75/session</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Personal trainer sessions
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Customized programs
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Flexible scheduling
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-secondary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Goal-oriented training
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 px-4 rounded text-center transition duration-300">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Join GamerXise Today</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Start transforming your gaming sessions into full-body workouts and improve both your health and gaming skills.</p>
+            <a href="#pricing" class="bg-secondary hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">GamerXise</h3>
+                    <p class="text-gray-400">Transform your gaming into a workout and enhance both your health and gaming skills.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition duration-300">Terms of Use</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Email: info@gamerxise.com</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 GamerXise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.querySelector('.md\\:hidden + .md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('block', 'absolute', 'top-16', 'right-0', 'bg-white', 'shadow-lg', 'p-4', 'w-full');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block', 'absolute', 'top-16', 'right-0', 'bg-white', 'shadow-lg', 'p-4', 'w-full');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
